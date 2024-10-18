@@ -1,0 +1,18 @@
+<h2 class="head">All &nbsp; Products</h2>
+
+<div class="box mt-5" >
+  <div class="col-3">
+    <app-select [allCats]="allCats" [title]="'Categories:'" (selectItem)="filterItems($event)"></app-select>
+  </div>
+  <div class="row" *ngIf="!loading">
+    <div class="col-sm-6 col-lg-3 col-md-4" *ngFor="let product of allProducts">
+      <app-product [product]="product"></app-product>
+    </div>
+  </div>
+</div>
+
+<div class="spinner" *ngIf="loading">
+  <app-spinner></app-spinner>
+</div>
+
+

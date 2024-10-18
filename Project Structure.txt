@@ -1,0 +1,13 @@
+Project Structure 
+- Products
+
+	Components:
+		- All Products
+		- Products Details
+	Services:
+		- product.service
+-Carts
+	Components:
+		- Cart
+	Services:
+		- Cart.service

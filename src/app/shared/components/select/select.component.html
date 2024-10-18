@@ -1,0 +1,5 @@
+<label for="cats" class="mb-1">{{title}}</label>
+  <select id="cats" class="form-control mb-4" (change)="filterItems($event)" style="cursor: pointer;">
+    <option value="all">All</option>
+    <option [value]="cat" *ngFor="let cat of allCats">{{cat}}</option>
+</select>

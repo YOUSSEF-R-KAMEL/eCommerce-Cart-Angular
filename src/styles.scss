@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
+:root {
+  --darkColor: #f2f2f2 ;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Slabo 27px", serif;
+}
+
+.dark {
+  background-color: #333 !important;
+  .head {
+    color: var(--darkColor);
+    &::before {
+      background-color: var(--darkColor) !important;
+    }
+  }
+  .box label {
+    color: var(--darkColor) !important;
+  }
+  .cart-body .title, .cart-body .desc {
+    color: var(--darkColor) !important;
+    background-color: #333 !important;
+  }
+  .box .info {
+    color: var(--darkColor) !important;
+  }
+  .cart {
+    box-shadow: 0 0 10px #0652DD !important;
+
+  }
+}
+
+.slabo-27px-regular {
+  font-family: "Slabo 27px", serif;
+  font-weight: 400;
+  font-style: normal;
+}
